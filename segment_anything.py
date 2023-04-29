@@ -401,11 +401,7 @@ class COCOJsonUtility:
 
 import roboflow
 from roboflow import Roboflow
-
-roboflow.login()
-
-rf = Roboflow()
-
+rf = Roboflow(api_key="0a4WwzoVWX7OLQHdybod")
 project = rf.workspace("hashira-fhxpj").project("mri-brain-tumor")
 dataset = project.version(1).download("coco")
 
