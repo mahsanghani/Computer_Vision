@@ -398,8 +398,8 @@ class COCOJsonUtility:
 
 # Commented out IPython magic to ensure Python compatibility.
 # %cd {HOME}
+!pip install roboflow
 
-import roboflow
 from roboflow import Roboflow
 rf = Roboflow(api_key="0a4WwzoVWX7OLQHdybod")
 project = rf.workspace("hashira-fhxpj").project("mri-brain-tumor")
